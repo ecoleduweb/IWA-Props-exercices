@@ -1,5 +1,3 @@
-import '@style/Layout.scss'
-
 function TheFooter() {
   return (
     <footer>

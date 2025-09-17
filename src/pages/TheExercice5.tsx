@@ -1,5 +1,4 @@
-import '../style/Layout.scss'
-import TheModal5 from '@components/TheModal5'
+import TheModal5 from '../components/TheModal5'
 import Rank from '../types/RankEnum'
 import LightSaberColor from '../types/LightSaberColorEnum'
 import { ForceWeilder } from '../types/Character'
@@ -51,7 +50,7 @@ function TheExercice5() {
       <p>Ton interface devra avoir un objet de type fonction. Comme ceci : <code>onNext: () =&gt; void</code></p>
       <p>Comme tu peux remarquer, ça fait penser à onClick!</p>
       <p>Dernier point, dans ton composant, tu passeras le character ainsi <code>character[index]</code></p>
-      <TheModal5 />
+      <TheModal5  character={characters[index]} onNext={handleNext} onPrevious={handlePrevious} />
     </>
   )
 }

@@ -1,12 +1,14 @@
 import '../style/Modal.scss'
 import ACharacterCard from '../components/ACharacterCard'
+import { ForceWeilder } from '../types/Character'
 
-const TheModal = () => {
+interface PropsInterface { character: ForceWeilder, isSith: boolean }
+const TheModal = ({ character, isSith }: PropsInterface) => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <ACharacterCard />
-        <p>c'est un sith (ou pas, on ne m'a pas encore passé de props boolean)</p>
+        <ACharacterCard character={character} />
+        <p> {isSith ? 'c\'est ': 'Ce n\'est pas'} un sith</p>
       </div>
     </div>
   )
