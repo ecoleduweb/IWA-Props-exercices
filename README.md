@@ -81,6 +81,20 @@ const TheComponent = ({booleanValuePassedInParameter}: PropsInterface) => {
 export default TheComponent
 ```
 
+## Comment passer en paramètre une valeur dans mon composant?
+
+Maintenant que TheComponent s'attend à avoir une valeur en paramètre, tu peux lui passer cette dernière ainsi :
+
+```tsx
+import TheComponent from './components/TheComponent'
+
+//html
+<TheComponent booleanValuePassedInParameter={false} />
+//etc....
+```
+
+Sache que `false` pourrait être une variable boolean issu d'un état (useState)
+
 ## Now what?
 
 Dans le dossier /pages, tu peux y trouver les exercices. Ces derniers importent des composants qui sont dans le dossier components. Bon apprentissage!
