@@ -3,18 +3,22 @@ import '../style/Modal.scss'
 import Jedi from '../assets/jedi.svg'
 import LaserHole from '../assets/LaserHole.svg'
 
-const TheModal = () => {
+interface LaserPosition { x: number, y: number }
+const TheModal = ({ laserHoles }: { laserHoles: LaserPosition[] }) => {
 
   return (
     <div className="modal">
       <div className="modal-content">
         <div className='jedi'>
           <img src={Jedi} />
-          <img
+          {laserHoles.map((pos, index) => (
+            <img
+            key={index}
             className='shot'
-            style={{ left: `${0}%`, top: `${0}%` }}
+            style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
             src={LaserHole}
           />
+          ))}
         </div>
       </div>
     </div>
