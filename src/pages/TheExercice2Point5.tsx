@@ -15,10 +15,10 @@ const TheExercice2Point5 = () => {
   return (
     <>
       <h2>Deuxième défi défi et demi</h2>
-      <p>Passes un tableau de message dans la modale.</p>
+      <p>Passes un tableau de messages dans la modale.</p>
       <p>Il y a deux défis ici soit : comment ajouter une valeur à un tableau dans un usestate</p>
       <p>Comment afficher un tableau de balises p</p>
-      <p>Demande à chat gpt! :)</p>
+      <p>Tu dois demander à Antoine de t'aider!</p>
       <p>Tu ne peux pas écrire plus que 5 messages. Au total, les messages doivent faire moins de 100 caractères</p>
       <label >Message pour la modale
         <input type="text" placeholder='Ton Message' onKeyDown={handleEnter} />
