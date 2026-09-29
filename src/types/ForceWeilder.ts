@@ -1,5 +1,5 @@
-import Rank from "@types/RankEnum"
-import LightSaberColor from "@types/LightSaberColorEnum"
+import Rank from "./RankEnum"
+import LightSaberColor from "./LightSaberColorEnum"
 
 interface ForceWeilder {
   name: string

@@ -1,6 +1,6 @@
 import '../style/Layout.scss'
 import TheModal4 from '../components/TheModal4'
-import { ForceWeilder } from '../types/Character'
+import { ForceWeilder } from '../types/ForceWeilder'
 import Rank from '../types/RankEnum'
 import LightSaberColor from '../types/LightSaberColorEnum'
 const Luke: ForceWeilder = {
