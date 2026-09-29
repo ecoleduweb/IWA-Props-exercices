@@ -8,13 +8,13 @@ const characters: ForceWeilder[] = [
   {
     name: 'Luke Skywalker',
     rank: Rank.GrandMaster,
-    forceLevel: 100,
+    forceLevel: 80,
     lightsaberColor: LightSaberColor.Blue
   },
   {
     name: 'Darth Vader',
     rank: Rank.SithLord,
-    forceLevel: 100,
+    forceLevel: 70,
     lightsaberColor: LightSaberColor.Red
   },
   {
@@ -26,7 +26,7 @@ const characters: ForceWeilder[] = [
   {
     name: 'Obi-Wan Kenobi',
     rank: Rank.Master,
-    forceLevel: 100,
+    forceLevel: 90,
     lightsaberColor: LightSaberColor.Blue
   }
 ]
